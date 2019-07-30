@@ -40,9 +40,49 @@
          <input type="text"placeholder="Surname"class="yoyo" style="width:180px"><br>
          <input type="email"placeholder="Mobile number or email"class="yoyo" style="width:365px;padding:20px"><br>
          <input type="password"placeholder="New Password"class="yoyo" style="width:365px;">
-       <h3>BIRTHDAY</h3>
-       <select>
-<option></option>
+         <h3>BIRTHDAY</h3>
+         <select id="p">
+          <option>1</option>
+          
+          </select>
+          <select id="q">
+          <option>january</option>
+          <option>february</option>
+          <option>march</option>
+          <option>april</option>
+          <option>mAY</option>
+          <option>june</option>
+          <option>july</option>
+          <option>august</option>
+          <option>september</option>
+          <option>october</option>
+          <option>november</option>
+          <option>december</option>
+          </select>
+          <select id="r">
+          <option>1990</option>
+          </select>
+          <script>
+          var c = document.getElementById("p");
+          for(var i=2;i<15;i++){
+              var t =document.createElement("option");
+          t.text=i;
+          c.add(t);
+          }
+          var d = document.getElementById("r");
+          for(var i=1991;i<2019;i++){
+              var s =document.createElement("option");
+          s.text=i;
+          d.add(s);
+          
+          
+          }
+         
+         
+         </script>
+         
+         
+         
 
 
 
