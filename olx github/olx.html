@@ -47,6 +47,9 @@
 
 
 </div>
+<button onclick="uu()" style="width:20px;height:10px;display:none;position:fixed;" id="i">back on top</button>
+
+
 <div style="display:flex;margin-top:20px;">
     <div class="doll dd">
     <a href="https://www.olx.in/item/all-dth-tata-sky-airtel-tv-dish-tv-tataskyairteltv-hdsd-box-new-iid-1518428943"><img src="12.png" class="p"></a></div>
@@ -115,6 +118,18 @@
  <div style="color:white;margin-left:20px;margin-top:20px;">     Pakistan-South Africa-Kenya-Nigeria-Ghana</div>
 <div style="color:white;margin-left:600px;margin-top:20px;">free classifieds in india. 2006-2019 OLX</div>
 </div> 
-
+<script>
+    var c= document.getElementById("i")
+    window.onscroll=function(){kin()};
+    function kin(){
+        if (document.body.scrollTop>500){
+            c.style.display="block"}
+            else{c.style.display="none"}
+        }
+    function uu()
+    {
+        document.body.scrollTop=0
+    }
+    </script>
 </body>
 </html>
