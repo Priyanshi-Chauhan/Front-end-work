@@ -1,0 +1,37 @@
+<html>
+    <head><title> unique code</title></head>
+    <body>
+        <select id="p">
+<option>1</option>
+
+</select>
+<select id="q">
+<option>january</option>
+</select>
+<select id="r">
+<option>1990</option>
+</select>
+<script>
+var c = document.getElementById("p");
+for(var i=2;i<15;i++){
+    var t =document.createElement("option");
+t.text=i;
+c.add(t);
+}
+var d = document.getElementById("r");
+for(var i=1991;i<2019;i++){
+    var s =document.createElement("option");
+s.text=i;
+d.add(s);
+
+
+}
+var e = document.getElementById("q");
+for(var i=january+1;i<january+10;i++){
+    var u=document.createElement("option");
+u.text=i;
+e.add(u);
+}
+</script>
+    </body>
+</html>
