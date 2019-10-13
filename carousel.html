@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <div id="slide" style="width:20%;height:600px;display:flex">
+        <img src="hack 2.jpg">
+        <img src="hack 4.jpg">
+        <img src="hack 3.jpg">
+    </div>
+<button onclick="next()">next</button>
+    </body>
+    <script>
+     
+        
+        function next(){
+            var i=0
+            var a = document.getElementById("slide")
+       a[i].style.display="none"
+       i++;
+       if(i+1>slides.length){
+           i=0
+       }
+       a[i].style.display="block"}
+    </script>
+</html>
