@@ -1,0 +1,23 @@
+<html>
+    <body>
+       
+    </body>
+    <script>
+    var i =0
+    var images=[]
+    images[0] = "hack 2.jpg"
+    images[1]="hack 3.jpg"
+    images[2]="hack 4.jpg"
+    function fun(){
+        document.slide.src= images[i];
+        if((i+1) <images.length){
+            i++
+        }
+        else{
+            i=0;
+        }
+    setTimeout("fun()",2000) 
+    }
+    window.onload=fun;
+    </script>
+</html>

@@ -2,18 +2,19 @@
 
     <body>
         
-        <img src="hack 2.jpg" style=" display:block"class="slide">
-        <img src="hack 4.jpg" style="display:none" class="slide">
-        <img src="hack 3.jpg" style="display:none" class="slide">
+     <div style="width:100%; height:100%" class="slide"><img src="hack 2.jpg" style=" display:block"></div>
+   <div style="width:100%; height:100%" class="slide"><img src="hack 4.jpg" style="display:none"></div>
+   <div style="width:100%; height:100%" class="slide"><img src="hack 3.jpg" style="display:none"></div>
     
 <button onclick="next()">next</button>
     </body>
     <script>
      
      var i=0
+     var a = document.getElementsByClassName("slide")
         function next(){
            
-            var a = document.getElementsByClassName("slide")
+            
        a[i].style.display="none"
        i++;
        if(i+1>slides.length){
