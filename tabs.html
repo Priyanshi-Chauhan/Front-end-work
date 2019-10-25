@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS</title>
+<title>Tabs</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
@@ -36,7 +36,7 @@
 </div>
 
 <script>
-function openCity(evt, cityName) {
+function openCity(event, cityName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("city");
   for (i = 0; i < x.length; i++) {
@@ -47,7 +47,7 @@ function openCity(evt, cityName) {
     tablinks[i].className = tablinks[i].className.replace(" w3-red", ""); 
   }
   document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-red";
+  event.currentTarget.className += " w3-red";
 }
 </script>
 
