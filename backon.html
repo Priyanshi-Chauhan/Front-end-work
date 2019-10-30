@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+            <button onclick="topp()" id="pro" style="display:none;position:fixed">back to top</button>
+        <div style="width:100%;height:1000px;">
+        <h1>when u scroll down,come up with the button shown</h1>
+        </div>
+        
+ <h2>go back</h2>       
+        
+        <script>
+            window.onscroll=function(){poo()};
+            function poo(){
+                if(document.body.scrollTop>100)
+                {document.getElementById("pro").style.display="block"}
+                else 
+                 {document.getElementById("pro").style.display="none"}
+
+                 
+            }
+        
+        function topp()
+        {document.body.scrollTop=0}
+        
+        
+        </script>
+        
+        
+        
+    </body>
+</html>
